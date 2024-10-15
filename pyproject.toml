@@ -10,6 +10,9 @@ readme = "README.md"
 python = "^3.12"
 aiogram = "^3.13.1"
 loguru = "^0.7.2"
+aiohttp = "^3.10.10"
+pyowm = "^3.3.0"
+pydantic = "^2.9.2"
 
 [tool.poetry.scripts]
 weather-hyperbot = "weather_hyperbot.main:start"

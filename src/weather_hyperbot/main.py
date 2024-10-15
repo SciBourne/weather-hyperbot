@@ -5,7 +5,7 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.enums.parse_mode import ParseMode
 from aiogram.fsm.storage.memory import MemoryStorage
 
-from loguru import logger
+from loguru import logger as log
 
 from configs import BOT_TOKEN
 from router import router
@@ -23,7 +23,7 @@ async def main():
     dp = Dispatcher(storage=MemoryStorage())
     dp.include_router(router)
 
-    logger.info("Weather Hyperbot started")
+    log.info("Weather Hyperbot started")
 
     await bot.delete_webhook(drop_pending_updates=True)
     await dp.start_polling(bot)
