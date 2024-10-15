@@ -9,7 +9,10 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.12"
 aiogram = "^3.13.1"
+loguru = "^0.7.2"
 
+[tool.poetry.scripts]
+weather-hyperbot = "weather_hyperbot.main:start"
 
 [build-system]
 requires = ["poetry-core"]
