@@ -9,10 +9,11 @@
 <br>
 
 
-## Стек:
+## Основной стек:
 
 * Python 3.12
 * aiogram
+* aiohttp
 
 <br>
 
